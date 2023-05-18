@@ -8,9 +8,9 @@ enum class PowerState
 {
     Off, 
     WaitStableGround,
-	WaitStableAir,
+    WaitStableAir,
     On,
-	WaitOffAir,
+    WaitOffAir,
 };
 
 static PowerState state = PowerState::Off;
