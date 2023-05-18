@@ -1,0 +1,19 @@
+/*! \page dia_turn_on Диаграмма включения полезной нагрузки
+\startuml
+[*]-->Off
+Off: Нагрузка выключена
+Off-->WaitStable: ОБ>=2400
+WaitStable: Ожидание стабильности
+WaitStable-->Off: ОБ<2400
+WaitStable-->On: t >= 30c
+On: Нагрузка включена
+On-->Off: ОБ<1000
+
+legend
+  Условия:
+   - ОБ - Усреднённая частота оборотов
+   - t -  Время со старта блока
+endlegend
+\enduml
+*/
+                        
